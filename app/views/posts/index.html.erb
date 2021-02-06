@@ -1,0 +1,7 @@
+<% @posts.each do 
+    |post| %>
+   <!-- <div><a href='<%= post_path(post) %>'><%=post.title%></a></div> -->
+   <div><%= link_to post.title, post_path(post) %></div>
+    <%end%>
+
+    <div><%=link_to "The new page", register_path %></div>
